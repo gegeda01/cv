@@ -1,64 +1,175 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;400&display=swap');
+:root{
+  --bg:#eff4fd;
+  --white-color:#fff;
+  --black-color:#212121;
+  --primary-color:#fb8c95;
+  --light-color:hsl(14,89%,53%,12%);
+  --transition: all 300ms ease;
+}
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
-}
-
-.head{
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: #eff4fd;
-}
-
-.logo{
-  width:150px;
-  height:130px;
-}
-nav{
-  display: flex;
-  width:84%;
-  margin: auto;
-  padding: 14px 0;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav ul li{
-  display: inline-block;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
   list-style: none;
-  margin: 10px 20px;
-}
-
-nav ul li a{
   text-decoration: none;
-  color: black;
-  font-weight: bold;
+  
+}
+html{
+  font-size: 15px;
+  scroll-behavior: smooth;
 }
 
-.profile{
-  margin-left: 8%;
-  margin-top: 15%;
+body{
+  background: var(--bg);
+  font-family: 'Poppins', sans-serif;
+  color: var(--black-color);
+  max-width: 100vw;
 }
 
-.profile h1{
+h1,h2,h3,h4,h5{
+  color: var(--black-color);
+  line-height: 1.2;
+}
+
+h1{
+  font-size: 3.8rem;
+}
+
+h2{
+  font-size: 2.6rem;
+}
+
+h3{
+  font-size: 1.6rem;
+}
+
+h4{
+  font-size: 1.2rem;
+}
+h5{
+  font-size: 0.86rem;
+}
+
+p{
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+
+.container{
+  width: 94%;
+  margin: 0 auto;
+}
+
+section{
+  padding: 10rem 0 7rem;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+section h1{
+  text-align: center;
+  display: block;
+  margin-bottom: 5rem;
+}
+
+
+
+/**NAVBAR**/
+
+nav{
+  height: 7rem;
+  background: var(--primary-color);
+  top:0;
+  z-index: 2;
+  display: flex;
+  width:100%;
+  margin: auto;
+  padding: 14px;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+}
+
+nav button{
+  display: none;
+}
+
+nav img{
+ width: 300px;
+ height: 100px;
+
+}
+
+nav .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+nav .container ul{
+  display: flex;
+  height: 100%;
+  margin-right: 200px;
+}
+
+nav .container ul li a{
+  height: 100%;
+  width: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-color);
+  position: relative;
+  transition: var(--transition);
+}
+
+nav .container ul li a:hover{
+  color: #1e90ff;
+}
+
+/**Profile info**/
+
+section.profile{
+  display: grid;
+  place-items: center;
+  position: relative;
+  padding-bottom: 14rem;
+  padding-left: 5rem;
+  padding-right: 1rem;
+}
+
+section.profile .container{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+section.profile .info{
+  padding-top: 19rem;
+}
+section.profile .info h1{
+  text-align: left;
+  margin: 0;
   font-size: 40px;
   color: #212121;
   margin-bottom: 20px;
 }
 
-span{
-  color:orange
+section.profile .info span{
+  color:#fb8c95;
 }
 
-.profile p{
+
+section.profile .info p{
   color:#555;
+  width:35rem;
   line-height: 22px;
 }
 
-.profile a{
+section.profile .info a{
   background:#212121 ;
   padding: 10px 18px;
   text-decoration: none;
@@ -68,25 +179,79 @@ span{
   margin: 30px 0;
   border-radius: 5px;
 }
-.image{
-  width:45%;
-  height:80%;
-  position: absolute;
-  bottom: 0;
-  right: 100px;
+
+section.profile .info a:hover{
+  box-shadow: 0 0.2rem gray;
 }
 
-.image img{
-  height:100%;
-  position: absolute;
-  left:50%;
-  bottom: 0;
-  transform: translate(-50%);
-  transition: bottom 1s, left 1s;
+section.profile .profile-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.2rem;
+  padding-left: 5rem;
 }
 
-.girl{
-  border-radius: 20%;
-  width:70%;
-  height:200px;
+section.profile .profile-area .outer-circle{
+  width:38rem;
+  height:38rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  position: relative;
+  animation: move 30s linear infinite;
 }
+
+@keyframes move {
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+section.profile .profile-area .outer-circle i{
+  display: block;
+  width:4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: absolute;
+  background:var(--white-color);
+  color:var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 1rem var(--light-color);
+}
+
+section.profile .profile-area .outer-circle i:nth-child(1){
+  left:calc(50% - 2rem);
+  top:-2rem;
+}
+
+section.profile .profile-area .outer-circle i:nth-child(2){
+  right: -2rem;
+  top:calc(50% - 2rem);
+}
+
+section.profile .profile-area .outer-circle i:nth-child(3){
+  left:-2rem;
+  top:calc(50% - 2rem);
+}
+
+section.profile .profile-area .outer-circle i:nth-child(4){
+  bottom: -2rem;
+  left: calc(50% - 2rem);
+}
+
+section.profile .profile-area .inner-circle img{
+  position: absolute;
+  width: 30rem;
+  height:30rem;
+  object-fit:cover;
+  border-radius: 50%;
+  right: 10rem;
+  bottom: 18rem;
+  display: flex;
+}
+
+
+
+

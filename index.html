@@ -4,37 +4,58 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
     <title>Katherine's portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                                     
     <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
   <body>
-    <div id="page" class="head">
+    <!--Navbar starts here-->
             <nav>
+              <div class="container">
               <img src="./assets/logo1.png" class="logo">
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact Me</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
               </ul>
-              <ul class="socials">
-                <div><a href="https://www.linkedin.com/in/katherine-luo-b30493175/"><ion-icon name="logo-linkedin"></ion-icon></a></div>
-                <div><a href="https://github.com/gegeda01"><ion-icon name="logo-github"></ion-icon></a></div>
-              </ul>
+              <button><span class="material-icons-sharp">menu</span></button>
+              <button><span class="material-icons-sharp">close</span></button>
+            </div>
             </nav>
-            <div class="profile">
+    <!--Profile introduction starts here-->
+    <section class="profile">
+      <div class="container">
+            <div class="info">
                 <h1>Kia Ora! I'm <span>Katherine Luo</span></h1>
                 <p>Penultimate year computer systems engineering student </p>
                 <p>in the University of Auckland.</p>
-                <a href="" class="button"> DOWNLOAD MY CV</a>
+                <a href="" class="btn"> DOWNLOAD MY CV</a>
             </div>
-            <div class="image">
-              <img src="./assets/shape2.png" class="shape">
-              <img src="./assets/profile2.png" class="girl">
+
+            <div class="profile-area">
+              <div class="outer-circle">
+                <i class='fab fa-java' style='font-size:48px;color:red'></i>
+                <i class='fab fa-python' style='font-size:48px;color:blue'></i>
+                <i class="fab fa-android" style="font-size:48px;color:greenyellow"></i>
+                <i class="material-icons-sharp" style="font-size:48px; color:black">memory</i>
+              </div>
+              <div class="inner-circle">
+                <img src="./assets/profile1.png" class="girl">
+              </div>
             </div>
-          </div>
-          </div>
+            </div>
+    </section>
+
+  <!--About starts here-->
+  <section class="about" id="about">
+    
+  </section>            
+
       <main>
         
       </main>
@@ -42,6 +63,7 @@
     
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    
   </body>
 
 </html>
