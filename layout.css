@@ -130,6 +130,7 @@ nav .container ul li a{
 .hover{
   display: inline-block;
   position: relative;
+  align-items: center;
 }
 
 .hover::before{
@@ -144,8 +145,8 @@ nav .container ul li a{
 }
 
 .hover:hover::before{
-  width: 10rem;
-  left:0;
+  width: 100%;
+  left:auto;
   right: auto;
 }
 
@@ -282,25 +283,38 @@ section.about{
   background: var(--white-color);
 }
 
+section.about h1{
+  text-align: left;
+  margin-left: 7%;
+}
+
 section.about .container{
   display: grid;
   grid-template-columns: 60rem auto;
-  gap:5rem;
+  gap:2.3rem;
 }
 
 section.about p{
   margin-bottom: 2rem;
-  text-align: justify;
+  margin-left: 4rem;
+  text-align:justify;
 }
 
+section.about .about-skills h4{
+  font-style:italic;
+  margin-bottom: 8%;
+}
 
+.skill-item{
+  margin-bottom: 6.5%;
+}
 .skill-item .skill-header
 {
     position: relative;
 }
 .skill-item .skill-header .skill-title
 {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
     margin-top: 15px;
 }
@@ -324,8 +338,9 @@ section.about p{
     width: 100%;
     height: 9px;
     border-radius: 5px;
-    background-color: rgba(33,243,26,0.11);
+    background-color: var(--bg);
     position: relative;
+    align-items: center;
 }
 .skill-item .skill-bar .bar-inner .progress-line
 {
@@ -350,4 +365,13 @@ section.about p{
     right: 0;
 }
 
+/**Experience starts here**/
+section.experience{
+  background: var(--bg);
+}
+
+section.experience h1{
+  text-align: left;
+  margin-left: 7%;
+}
 
