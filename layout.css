@@ -214,7 +214,7 @@ section.profile .profile-area{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top:5%;
+  top:auto;
   padding-left: 5rem;
   position: relative;
 }
