@@ -376,7 +376,7 @@ section.experience h1{
 
 section.experience .container{
   display: grid;
-  grid-template-columns: 45rem auto;
+  grid-template-columns: 1fr 1fr;
   gap:2.3rem;
 }
 
@@ -391,7 +391,7 @@ section.experience .container .timeline{
   position: relative;
   left: 4.6%;
   width:10px;
-  height:400px;
+  height:370px;
   background: var(--black-color);
 }
 
