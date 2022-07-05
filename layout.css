@@ -374,3 +374,32 @@ section.experience h1{
   margin-left: 7%;
 }
 
+section.experience .timeline{
+  position: relative;
+  left: 4.6%;
+  width:10px;
+  height:20px;
+  background: var(--black-color);
+}
+
+/**Projects starts here**/
+section.projects{
+  background: var(--white-color);
+}
+
+section.projects h1{
+  text-align: left;
+  margin-left: 7%;
+}
+
+/**Contact me starts here**/
+section.contact{
+  background: var(--bg);
+}
+
+section.contact h1{
+  text-align: left;
+  margin-left: 7%;
+}
+
+
