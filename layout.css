@@ -269,12 +269,12 @@ section.profile .profile-area .outer-circle i:nth-child(4){
 
 section.profile .profile-area .inner-circle img{
   position: absolute;
-  width: 30%;
-  height:50%;
+  width: 31rem;
+  height:31rem;
   object-fit:cover;
   border-radius: 50%;
-  right: 10%;
-  bottom: 27%;
+  right: 9.5%;
+  bottom: 28%;
   display: flex;
 }
 
