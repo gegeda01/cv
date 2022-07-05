@@ -374,13 +374,77 @@ section.experience h1{
   margin-left: 7%;
 }
 
-section.experience .timeline{
+section.experience .container{
+  display: grid;
+  grid-template-columns: 45rem auto;
+  gap:2.3rem;
+}
+
+section.experience .container .first-work{
+  display: grid;
+  grid-template-columns:30px 1fr;
+  gap:1.5rem;
+  margin-left: 7%;
+}
+
+section.experience .container .timeline{
   position: relative;
   left: 4.6%;
   width:10px;
-  height:20px;
+  height:400px;
   background: var(--black-color);
 }
+
+section.experience .container .point{
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  width:30px;
+  height: 30px;
+  background: var(--black-color);
+  border-radius: 50%;
+}
+
+section.experience .container .description .time-start{
+  position: relative;
+  font-style: italic;
+}
+
+section.experience .container .description .company{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns:90px 1fr;
+  gap:1.5rem;
+}
+
+section.experience .container .description .company img{
+  padding-top: 0.8rem;
+  position: relative;
+  width: 90px;
+  height: 90px;
+}
+
+section.experience .container .description .company-name{
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+section.experience .container .description .title{
+  margin-top: 20px;
+}
+
+section.experience .container .description .duty{
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+section.experience .container .second-work{
+  display: grid;
+  grid-template-columns:30px 1fr;
+  gap:1.5rem;
+  margin-left: 7%;
+}
+
 
 /**Projects starts here**/
 section.projects{
