@@ -223,6 +223,8 @@ section.profile .profile-area .outer-circle{
   height:38rem;
   border: 1px solid var(--primary-color);
   border-radius: 50%;
+  right: 1%;
+  bottom: 1%;
   position: relative;
   animation: move 20s linear infinite;
 }
