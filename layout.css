@@ -216,6 +216,7 @@ section.profile .profile-area{
   align-items: center;
   padding-top: 1.2rem;
   padding-left: 5rem;
+  position: relative;
 }
 
 section.profile .profile-area .outer-circle{
@@ -223,8 +224,6 @@ section.profile .profile-area .outer-circle{
   height:38rem;
   border: 1px solid var(--primary-color);
   border-radius: 50%;
-  right: 1%;
-  bottom: 1%;
   position: relative;
   animation: move 20s linear infinite;
 }
@@ -275,8 +274,8 @@ section.profile .profile-area .inner-circle img{
   height:31rem;
   object-fit:cover;
   border-radius: 50%;
-  right: 9.5%;
-  bottom: 28%;
+  right: 11.3%;
+  bottom: 9.4%;
   display: flex;
 }
 
