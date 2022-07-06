@@ -480,7 +480,7 @@ section.projects .container .third{
 section.projects .container .image-reddit{
   width: 90%;
   height: 300px;
-  
+  object-fit: fill;
   border-radius: 15px;
 }
 
