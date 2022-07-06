@@ -456,6 +456,7 @@ section.projects h1{
   margin-left: 7%;
 }
 
+
 /**Contact me starts here**/
 section.contact{
   background: var(--bg);
@@ -465,5 +466,6 @@ section.contact h1{
   text-align: left;
   margin-left: 7%;
 }
+
 
 
