@@ -515,6 +515,57 @@ section.projects .third:hover .hover-reddit{
   transform: scale(1);
 }
 
+section.projects .container-2{
+  margin-left: 20%;
+  display: grid;
+  grid-template-columns: 30rem 30rem;
+  grid-gap: 5rem;
+}
+
+section.projects .container-2 .fourth{
+  position: relative;
+  border-radius: 15px;
+}
+
+section.projects .container-2 .fifth{
+  position: relative;
+  border-radius: 15px;
+}
+
+section.projects .container-2 .image-reddit{
+  width: 90%;
+  height: 65%;
+  border-radius: 15px;
+}
+
+section.projects .container-2 .hover-reddit{
+  width: 90%;
+  height: 65%;
+  background-color: var(--bg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
+}
+
+section.projects .fourth:hover .hover-reddit{
+  opacity: 1;
+  transform: scale(1);
+}
+
+section.projects .fifth:hover .hover-reddit{
+  opacity: 1;
+  transform: scale(1);
+}
+
+
 /**Contact me starts here**/
 section.contact{
   background: var(--bg);
