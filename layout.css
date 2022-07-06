@@ -632,10 +632,51 @@ section.contact{
   background: var(--bg);
 }
 
-section.contact h1{
+section.contact p{
+  font-size:3.8rem;
+  font-weight: bold;
   text-align: left;
   margin-left: 7%;
 }
 
+section.contact h4{
+  text-align: left;
+  margin-left: 7%;
+  margin-top: 2%;
+}
 
+section.contact form{
+  margin-top: 5%;
+  margin-left: 7%;
+}
 
+section.contact form input, section.contact form textarea{
+  display: block;
+  width: 50%;
+  margin: 2% 0;
+  padding: 1.6rem;
+  border: 2px solid var(--black-color);
+  background: transparent;
+  color: var(--black-color);
+  border-radius: 2%;
+}
+
+section.contact form input:focus, section.contact form textarea:focus{
+  background: var(--white-color);
+}
+
+section.contact .btn{
+  background:#212121;
+  width:30%;
+  padding: 10px 18px;
+  font-weight: bold;
+  color:#fff;
+  display: inline-block;
+  margin: 30px 0;
+  margin-left: 10%;
+  border-radius: 5px;
+}
+
+section.contact .btn:hover{
+  box-shadow: 0 0.2rem gray;
+}
