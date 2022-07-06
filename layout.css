@@ -518,7 +518,7 @@ section.projects .third:hover .hover-reddit{
 section.projects .container-2{
   margin-left: 20%;
   display: grid;
-  grid-template-columns: 30rem 30rem;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 5rem;
 }
 
@@ -533,14 +533,14 @@ section.projects .container-2 .fifth{
 }
 
 section.projects .container-2 .image-reddit{
-  width: 90%;
-  height: 65%;
+  width: 77%;
+  height: 67%;
   border-radius: 15px;
 }
 
 section.projects .container-2 .hover-reddit{
-  width: 90%;
-  height: 65%;
+  width: 77%;
+  height: 67%;
   background-color: var(--bg);
   position: absolute;
   left: 0;
