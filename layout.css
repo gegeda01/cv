@@ -500,6 +500,35 @@ section.projects .container .hover-reddit{
   transition: all 0.4s ease-in-out;
 }
 
+section.projects .container .hover-reddit .info{
+  text-align: center;
+  margin-top: 2%;
+  font-size: 0.9rem;
+}
+section.projects .container .hover-reddit .icon{
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.projects .container .hover-reddit .icon .icon-area{
+  background-color: var(--white-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+section.projects .container .hover-reddit .icon .icon-area:hover{
+  background-color: var(--primary-color);
+}
+
 section.projects .first:hover .hover-reddit{
   opacity: 1;
   transform: scale(1);
@@ -554,6 +583,38 @@ section.projects .container-2 .hover-reddit{
   transform: scale(0);
   transition: all 0.4s ease-in-out;
 }
+
+section.projects .container-2 .hover-reddit .info{
+  text-align: center;
+  margin-top: 2%;
+  font-size: 0.9rem;
+}
+section.projects .container-2 .hover-reddit .icon{
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+section.projects .container-2 .hover-reddit .icon .icon-area{
+  background-color: var(--white-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+section.projects .container-2 .hover-reddit .icon .icon-area:hover{
+  background-color: var(--primary-color);
+}
+
+
 
 section.projects .fourth:hover .hover-reddit{
   opacity: 1;
