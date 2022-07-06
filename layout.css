@@ -677,6 +677,10 @@ section.contact .btn{
   border-radius: 5px;
 }
 
+section.contact textarea{
+  height: 10rem;
+}
+
 section.contact .btn:hover{
   box-shadow: 0 0.2rem gray;
 }
