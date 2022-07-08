@@ -275,6 +275,7 @@ section.profile .profile-area .inner-circle{
   object-fit:cover;
   border-radius: 50%;
   display: flex;
+  overflow: hidden;
 }
 
 /**About starts here**/
@@ -632,6 +633,13 @@ section.contact{
   background: var(--bg);
 }
 
+section.contact .container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+
+
 section.contact p{
   font-size:3.8rem;
   font-weight: bold;
@@ -652,7 +660,7 @@ section.contact form{
 
 section.contact form input, section.contact form textarea{
   display: block;
-  width: 50%;
+  width: 70%;
   margin: 2% 0;
   padding: 1.6rem;
   border: 2px solid var(--black-color);
@@ -673,7 +681,7 @@ section.contact .btn{
   color:#fff;
   display: inline-block;
   margin: 30px 0;
-  margin-left: 10%;
+  margin-left: 18%;
   border-radius: 5px;
 }
 
@@ -683,4 +691,27 @@ section.contact textarea{
 
 section.contact .btn:hover{
   box-shadow: 0 0.2rem gray;
+}
+
+section.contact .social{
+  display: flex;
+  gap:3.9rem;
+  margin-top: 63%;
+}
+
+section.contact .social .icon-area{
+  background-color: var(--white-color);
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+section.contact .social .icon-area:hover{
+  background-color: var(--primary-color);
 }
