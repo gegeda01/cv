@@ -563,8 +563,8 @@ section.projects .container-2 .fifth{
 }
 
 section.projects .container-2 .image-reddit{
-  width: 77%;
-  height: 63%;
+  width: 90%;
+  height: 60%;
   border-radius: 15px;
 }
 
@@ -623,6 +623,11 @@ section.projects .fourth:hover .hover-reddit{
 }
 
 section.projects .fifth:hover .hover-reddit{
+  opacity: 1;
+  transform: scale(1);
+}
+
+section.projects .sixth:hover .hover-reddit{
   opacity: 1;
   transform: scale(1);
 }
