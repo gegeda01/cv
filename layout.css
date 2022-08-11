@@ -562,6 +562,10 @@ section.projects .container-2 .fifth{
   border-radius: 15px;
 }
 
+section.projects .container-2 .sixth{
+  position: relative;
+  border-radius: 15px;
+}
 section.projects .container-2 .image-reddit{
   width: 90%;
   height: 60%;
@@ -569,8 +573,8 @@ section.projects .container-2 .image-reddit{
 }
 
 section.projects .container-2 .hover-reddit{
-  width: 77%;
-  height: 63%;
+  width: 90%;
+  height: 60%;
   background-color: var(--bg);
   position: absolute;
   left: 0;
