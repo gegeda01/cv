@@ -546,10 +546,10 @@ section.projects .third:hover .hover-reddit{
 }
 
 section.projects .container-2{
-  margin-left: 16%;
+  margin-left: 7%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 5rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
 }
 
 section.projects .container-2 .fourth{
