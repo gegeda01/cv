@@ -545,80 +545,20 @@ section.projects .third:hover .hover-reddit{
   transform: scale(1);
 }
 
-section.projects .container-2{
-  margin-left: 7%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-}
-
-section.projects .container-2 .fourth{
+section.projects .container .fourth{
   position: relative;
   border-radius: 15px;
 }
 
-section.projects .container-2 .fifth{
+section.projects .container .fifth{
   position: relative;
   border-radius: 15px;
 }
 
-section.projects .container-2 .sixth{
+section.projects .container .sixth{
   position: relative;
   border-radius: 15px;
 }
-section.projects .container-2 .image-reddit{
-  width: 90%;
-  height: 60%;
-  border-radius: 15px;
-}
-
-section.projects .container-2 .hover-reddit{
-  width: 90%;
-  height: 60%;
-  background-color: var(--bg);
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  opacity: 0;
-  transform: scale(0);
-  transition: all 0.4s ease-in-out;
-}
-
-section.projects .container-2 .hover-reddit .info{
-  text-align: center;
-  margin-top: 2%;
-  font-size: 0.9rem;
-}
-section.projects .container-2 .hover-reddit .icon{
-  margin-top: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-section.projects .container-2 .hover-reddit .icon .icon-area{
-  background-color: var(--white-color);
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 1rem;
-  cursor: pointer;
-  transition: all 0.4s ease-in-out;
-}
-
-section.projects .container-2 .hover-reddit .icon .icon-area:hover{
-  background-color: var(--primary-color);
-}
-
 
 
 section.projects .fourth:hover .hover-reddit{
